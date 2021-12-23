@@ -16,19 +16,19 @@ const HeroFeature = (filepath, title) => {
 
 
    return (
-      <article className="grid lg:grid-cols-4 md:grids-rows-4 md:grids-cols-1">
+      <article id="features" className="test grid lg:grid-cols-4 md:grids-rows-4 md:grids-cols-1">
 
          {features.map(feature => (
                <section className="relative lg:h-screen grid place-items-center overflow-hidden border-b border-r border-slight-black group" key={feature.id}>
 
                   <img src={feature.pic} alt="" className="absolute inset-0 scale-200 blur-min opacity-0 group-hover:scale-175 group-hover:opacity-100 transition-all ease-out duration-2000 " />
 
-                  <div className="flex flex-col gap-3 z-10 w-3/4 mx-auto text-left text-white justify-start lg:h-1/6">
-                     <h3 className="text-4xl my-6">{feature.name}</h3>
+                  <div className="flex flex-col gap-3 z-10 w-3/4 mx-auto text-left text-white justify-start lg:h-1/6 cursor-pointer ">
+                     <h3 className="text-4xl my-6 font-bold">{feature.name}</h3>
 
                      <p>{feature.desc}</p>
 
-                     <a href="#" className="my-8 opacity-0 group-hover:opacity-100 transition-all ease-out duration-2000 px-2 py-3 bg-slate-50 text-black font-bold self-start">Learn more</a>
+                     <a href="#" className="my-8 opacity-0 group-hover:opacity-100 transition-all ease-out duration-2000 px-2 py-3 bg-slate-50 text-black font-bold self-start bg-gold rounded-lg">Learn more</a>
                   </div>
 
             </section>

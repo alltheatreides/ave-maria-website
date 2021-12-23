@@ -2,6 +2,7 @@
 import Navbar from './components/NavBar';
 import Home from './components/Home';
 import HeroFeature from './components/HeroFeature';
+// import HeroLanding from './components/HeroLanding';
 
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -25,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App lg:h-screen lg:fixed">
+    <div className="App">
       {/* SHould show below the dynamic implementation of the name variable */}
       {/* <h1>{name}</h1> */}
 

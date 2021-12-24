@@ -21,9 +21,9 @@ function App() {
     setName('luigi');
   };
 
-  useEffect(() => {
-    document.title = "AVE MARIA CK3 MOD";
-  }, []);
+  // useEffect(() => {
+  //   document.title = "AVE MARIA CK3 MOD";
+  // }, []);
 
   return (
     <div className="App">
